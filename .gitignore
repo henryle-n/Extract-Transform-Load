@@ -1,3 +1,10 @@
+netflix_titles.csv
+IMDb_movies.csv
+exported_draft.csv
+processed_df.csv
+imdb_movies.db
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

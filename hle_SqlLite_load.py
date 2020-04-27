@@ -492,6 +492,8 @@ print(f"TABLE DESCRIPTIONS:\n{('-')*30}\n>>> Number of Rows: {'{:,.0f}'.format(t
 # ---
 # ---
 
+# ### Create Engine & Connection to SQL Lite DB
+
 # In[32]:
 
 
@@ -506,10 +508,14 @@ Base.metadata.tables
 
 
 # folder name that will store the sql-lite database
-fol_name = "Exp_SqlLiteDb"
+fol_name = "Exp_SqlLiteDb_test"
+
+# if exist print a message for user
 if pathlib.Path(fol_name).exists():
     print(f' >> Folder "{fol_name}" already exists!\n >> No new folder was created ...')
     pass
+
+# if not make a new one and let user know
 else:
     get_ipython().system(' mkdir Exp_SqlLiteDb')
     print(f'Successfully created folder "{fol_name}"')
@@ -532,6 +538,10 @@ engine.execute("DROP TABLE IF EXISTS movie")
 # In[36]:
 
 
+# per docs found online, SQL Lite works up to int8
+# while creating this file, I found lots of DataType Mismatch errors
+# found this solutions as 2 lines belows to extend SQL to work with int64
+# -------------------------------------------------------------
 sqlite3.register_adapter(np.int64, lambda val: int(val))
 sqlite3.register_adapter(np.int32, lambda val: int(val))
 
@@ -547,8 +557,13 @@ sqlite3.register_adapter(np.int32, lambda val: int(val))
 # print(f'\n{("-")*50}\n>> There are total {i} columns in the current data frame.')
 
 
+# ### Create Template and Load Data from Python to SQL Lite DB
+
 # In[38]:
 
+
+# class name == 'Movie' with table name 'movie'
+# ------------------------------------------------------------------------------------
 
 class Movie(Base):
     
@@ -609,6 +624,9 @@ Base.metadata.tables
 # In[41]:
 
 
+# redo again to make sure SQL lite register int64-variables
+# -------------------------------------------------------------
+
 sqlite3.register_adapter(np.int64, lambda val: int(val))
 sqlite3.register_adapter(np.int32, lambda val: int(val))
 
@@ -620,27 +638,53 @@ sqlite3.register_adapter(np.int32, lambda val: int(val))
 session = Session(bind=engine)
 
 
-# In[ ]:
+# In[43]:
+
+
+### Begin looping thru dataframe and load data into template
+
+
+# In[44]:
 
 
 # looping over every row of the database and export data into SQL Lite
-i = 0
+
+# ==========================================================
+
+# specify how much data want to load, in fraction
+# ---------------------------
+
+print(f">>> There are total: \033[1;31m{'{:,.0f}'.format(t_shp[0])}\033[0;30m Records")
+data_load_perc = int(input (f">>> How much data would you like to load?\n>>> HINT: if 20%, input whole number 20\n--->>>User input: "))# in percentage 
+
+total_to_load = data_load_perc * t_shp[0] // 100 # use '//' to get the integer as the next function only accepts integer
+print(f">>> Preparing to load \033[1;31m{'{:,.0f}'.format(total_to_load)}\033[0;30m ({data_load_perc}%) Records")
+
+# ==========================================================
+
+values = range(total_to_load)
+
+
+# In[50]:
+
 
 # use progress bar to help user keep track of the process
 # build the iter-row within this progress bar
 # bar update code is inside the iter-row
+# =========================================
 
-values = range(t_shp[0])
+i = 0
 with tqdm(total=len(values)) as pbar:
-    for index, row in processed_df.iterrows():
+    for index, row in processed_df.head(n=total_to_load).iterrows():
         
         # calculate the # of loaded data and percentage
+       
         i +=1
-        perc = round(i / t_shp[0] * 100, 2)
-        
+        perc = round(i / total_to_load * 100, 2)
+       
         
         # Print out message for percentage 
-        print (f">>> Loading: \033[1;31m{'{:,.0f}'.format(i)}\033[0;30m Records  || \033[1;34m{perc}%\033[0;00m Done", end = "\r")
+        print (f">>> Loading: \033[1;31m{'{:,.0f}'.format(i)}\033[0;30m Records | \033[1;34m{perc}%\033[0;00m Complete", end = "\r", flush=True)
         
         # this is to update the progress bar
         pbar.update(1) 
@@ -679,25 +723,38 @@ with tqdm(total=len(values)) as pbar:
         
         # add data to SQL lite session, DB
         session.add(movie)
-        session.commit()     
-        
+print(">>> Finished loading all records into memory")
 
 
-# In[ ]:
+# In[46]:
 
 
+# commit to hard write onto DB
+print("Prepare to write records into SQL Lite DB")
+try:
+    session.commit()
+    print("Successfully wrote all records into SQL Lite DB")
+except Exception as errmess:
+    print("An Exception has occured ::", str(error))
+
+
+# In[47]:
+
+
+# check if records are there, uncomment out to run if desire
 # engine.execute("select * from Movie").fetchall()
 
 
-# In[ ]:
+# In[48]:
 
 
+# close out session after done loading data into db
 session.close()
 
 
 # ## Conver Jupyter Notebook to Python File
 
-# In[ ]:
+# In[49]:
 
 
 import os

@@ -81,9 +81,9 @@ The following tables are loaded into SQL Lite:
 <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad.PNG" alt="error" max-height="50%" max-width="50%"></kbd>  
  
   - In Terminal  
- 
- <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad_Terminal.PNG" alt="error" max-height="50%" max-width="50%"></kbd>  
-   
+<div style='border: 4px solid #f00; margin: 20px; display: table; width: 1px; float: center;'>
+  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad_Terminal.PNG" alt="error" max-height="50%" max-width="50%">
+</div>   
 
 * To automate the process, the Jupyter Notebook contains codes (towards the end of the notebook) to convert all codes into a Python file than can be run from terminal. Please remember that after conversion, comment out the conversion part to prevent accidental deletion of the python file  
 

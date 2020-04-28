@@ -95,10 +95,8 @@ The following tables are loaded into SQL Lite:
 
 ## Other Considerations with SQL Alchemy  
 * Program was built with an option to ask user to select how much data need to be loaded to prevent program from crashing on slower computing devices  
-   - In Jupyter Notebook  
- 
-<kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad.PNG" alt="error" max-height="50%" max-width="50%"></kbd>  
-
+   - In Jupyter Notebook
+   <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad.PNG" alt="error" max-height="50%" max-width="50%"></kbd>
    - In Terminal  
      
  <p align="center">

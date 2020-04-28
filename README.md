@@ -5,7 +5,7 @@ In this project, team of two: ***Henry Le*** and ***Abimbola Agunloye*** process
 The main objectives are to clean up, process, load final version into SQL Lite DataBase.
 
 <p align="center">
-  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/letscook.png" alt="error" max-height="50%" max-width="50%">
+  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/letscook.jpg" alt="error" max-height="50%" max-width="50%">
 </p>  
 
 

@@ -11,7 +11,7 @@ The main objectives are to clean up, process, load final version into SQLite Dat
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/maintheme_pic.gif" alt="error" max-height="50%" max-width="50%">
 </p>  
 
-<i><span style="font-family:metronova; font-size:0.2em;">Created by: Henry Le | Apr. 27, 2020</span></i>
+&nbsp; &nbsp; &nbsp; <i><span style="font-family:metronova; font-size:0.2em;">Created by: Henry Le | Apr. 27, 2020</span></i>
 
 <hr>
 

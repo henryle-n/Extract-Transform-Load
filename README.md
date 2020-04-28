@@ -10,7 +10,7 @@ The main objectives are to clean up, process, load final version into SQLite Dat
 <p align="center">
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/letscook.jpg" alt="error" max-height="50%" max-width="50%">
 </p>  
-
+<hr>
 
 ## Tools/ Techniques/ Modules  
 * Python | SQLAlchemy | SQLite3  
@@ -40,7 +40,7 @@ Link to both CSVs:
 * IMDB : https://www.kaggle.com/PromptCloudHQ/imdb-data  
 
 ## Data Cleanup & Analysis (Transform)  
-After two datasets were downloaded, performed ETL on the data as the following:  
+After two datasets were downloaded, performed data transformation as the following:  
 
 ### IMDb File  (by: **Henry Le**)
 * Convert data: empty string to number, float to integer, string to date  
@@ -95,12 +95,11 @@ The following tables are loaded into SQL Lite:
 
 ## Other Considerations with SQL Alchemy  
 * Program was built with an option to ask user to select how much data need to be loaded to prevent program from crashing on slower computing devices  
-
-  - In Jupyter Notebook  
-<kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad.PNG" alt="error" max-height="50%" max-width="50%"></kbd>  
- 
-  - In Terminal  
-<p align="center">
+   - In Jupyter Notebook
+   <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad.PNG" alt="error" max-height="50%" max-width="50%"></kbd>
+   - In Terminal  
+     
+ <p align="center">
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad_Terminal.PNG" alt="error" max-height="50%" max-width="50%">
 </p>   
 
@@ -108,13 +107,12 @@ The following tables are loaded into SQL Lite:
 
 * Since the database is too large to upload to GitHub, recommend to download to local storage and use the codes in this repository to replicate the project if desired  
 
-* Loading data takes good amount of time especially a large one, so progress bar was built in for Jupyter Notebook and records/ progress percentage messages are added to both Jupter Notebook and Python to help user track the progress, as below. Note that, the progress bar only works in Jupyter Notebook. So far, I'm unable to find any stable modules to work with both Python and Jupyter Notebook.  
-
-<kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Progress_Bar_Loading.png" alt="error" max-height="50%" max-width="50%"></kbd>  
-
-<kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Progress_Bar_Finshed.png" alt="error" max-height="50%" max-width="50%"></kbd>  
-
-<p align="center">
+* Loading data takes good amount of time especially a large one, so progress bar was built in for Jupyter Notebook and records/ progress percentage messages are added to both Jupter Notebook and Python to help user track the progress, as below. Note that, the progress bar only works in Jupyter Notebook. So far, I'm unable to find any stable modules to work with both Python and Jupyter Notebook.
+   - In Jupyter Notebook  
+   <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Progress_Bar_Loading.png" alt="error" max-height="50%" max-width="50%"></kbd>  
+   <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Progress_Bar_Finshed.png" alt="error" max-height="50%" max-width="50%"></kbd>  
+   - In Terminal    
+<p align="center">  
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Load_Data_Terminal.png" alt="error" max-height="50%" max-width="50%">
 </p>
 

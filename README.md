@@ -89,9 +89,13 @@ The following tables are loaded into SQL Lite:
 
 <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Progress_Bar_Finshed.png" alt="error" max-height="50%" max-width="50%"></kbd>   
 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Load_Data_Terminal.png" alt="error" max-height="50%" max-width="50%"></kbd>  
+<p align="center>
+          <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Load_Data_Terminal.png" alt="error" max-height="50%" max-width="50%"></kbd>
+</p>  
 
 
 * Upon running the program, there will be two more folders created to store the cleaned csv and final SQL Lite DB. Final folder structure as below:  
 
-<kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="50%" max-width="50%"></kbd>  
+<p align="center><kbd>
+          <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="50%" max-width="50%"></kbd>
+</p>  

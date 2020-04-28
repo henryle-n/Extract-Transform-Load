@@ -85,7 +85,7 @@ The following tables are loaded into SQL Lite:
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad_Terminal.PNG" alt="error" max-height="50%" max-width="50%">
 </p>   
 
-* To automate the process, the Jupyter Notebook contains codes (towards the end of the notebook) to convert all codes into a Python file than can be run from terminal. Please remember that after conversion, comment out the conversion part to prevent accidental deletion of the python file  
+* To automate the process, the Jupyter Notebook contains codes (in ***Part 3*** towards the end of the notebook) to convert all codes into a Python file than can be run from terminal. Please remember that after conversion, comment out the conversion part to prevent accidental deletion of the python file  
 
 * Since the database is too large to upload to GitHub, recommend to download to local storage and use the codes in this repository to replicate the project if desired  
 

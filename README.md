@@ -57,15 +57,15 @@ The following tables are loaded into SQL Lite:
 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="30%" max-width="30%">  
 
-* **imdb_movies.csv**  
+* **imdb_movies.csv** table 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png" alt="error" max-height="30%" max-width="30%">  
 
 
-* **netflix_movie.csv**  
+* **netflix_movie**  table
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png" alt="error" max-height="30%" max-width="30%">   
 
 
-* **netflix_tv_show.csv** 
+* **netflix_tv_show** table 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="30%" max-width="30%">  
 
 ## Summary

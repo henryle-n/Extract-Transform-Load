@@ -1,6 +1,6 @@
 # Extract-Transform-Load-DB  
 ## Overview   
-In this project, team of two: Henry Le and Abimbola Agunloye processed two downloaded CSV files from Kaggle.com.  
+In this project, team of two: ***Henry Le*** and ***Abimbola Agunloye*** processed two downloaded CSV files from Kaggle.com.  
 <hr>
 The main objectives are to clean up, process, load final version into SQL Lite DataBase.   
 

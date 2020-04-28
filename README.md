@@ -77,6 +77,9 @@ The following tables are loaded into SQL Lite:
 ## Other Considerations with SQL Alchemy  
 * Program was built with an option to ask user to select how much data need to be loaded to prevent program from crashing on slower computing devices  
 
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad.PNG" alt="error" max-height="50%" max-width="50%">
+
+
 * To automate the process, the Jupyter Notebook contains codes (towards the end of the notebook) to convert all codes into a Python file than can be run from terminal. Please remember that after conversion, comment out the conversion part to prevent accidental deletion of the python file  
 
 * Since the database is too large to upload to GitHub, recommend to download to local storage and use the codes in this repository to replicate the project if desired  

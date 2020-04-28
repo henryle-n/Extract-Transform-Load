@@ -4,6 +4,10 @@ exported_draft.csv
 processed_df.csv
 imdb_movies.db
 ETL_movies.db
+netflix_tv_show.csv
+netflix_movie.csv
+
+
 
 
 # Byte-compiled / optimized / DLL files

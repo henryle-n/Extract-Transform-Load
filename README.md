@@ -39,42 +39,18 @@ The following tables are loaded into SQL Lite:
 * **netflix_movie.csv** :: manual loaded by SQL Lite -> File -> Import  
 * **netflix_tv_show.csv**  :: manual loaded by SQL Lite -> File -> Import 
 
+## Final Images of Loaded SQL Lite DB
+* **All Tables**
+
+<img src="/blob/hle/Pictures/ETL_DB.png" alt="Mars out of range ... Waiting for satellite signal ..." max-height="60%" max-width="60%"><p>
+  
+[all table](https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png)
+
+* **imdb_movies.csv**  
 
 
+* **netflix_movie.csv**  
+
+* **netflix_tv_show.csv** 
 
 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-The final tables or collections that will be used in the production database.
-
-
-You will be required to submit a final technical report with the above information and steps required to reproduce your ETL process.
-
-Project Report
-At the end of the week, your team will submit a Final Report that describes the following:
-
-
-Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
-
-
-Transform: what data cleaning or transformation was required.
-
-
-Load: the final database, tables/collections, and why this was chosen.
-
-
-Please upload the report to Github and submit a link to Bootcampspot.

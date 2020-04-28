@@ -96,6 +96,4 @@ The following tables are loaded into SQL Lite:
 
 * Upon running the program, there will be two more folders created to store the cleaned csv and final SQL Lite DB. Final folder structure as below:  
 
-<p align="center><kbd>
-          <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="50%" max-width="50%"></kbd>
-</p>  
+<kbd align = "center"><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="50%" max-width="50%"></kbd>  

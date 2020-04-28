@@ -42,9 +42,11 @@ The following tables are loaded into SQL Lite:
 ## Final Images of Loaded SQL Lite DB
 * **All Tables**
 
-<img src="/blob/hle/Pictures/ETL_DB.png" alt="Mars out of range ... Waiting for satellite signal ..." max-height="60%" max-width="60%"><p>
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="60%" max-width="60%"><p>
   
-[all table](https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png)
+![all table](https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png)
+
+
 
 * **imdb_movies.csv**  
 

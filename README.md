@@ -8,6 +8,12 @@ The main objectives are to clean up, process, load final version into SQL Lite D
 * Python | SQLAlchemy | SQL Lite  
 * Pandas | TQDM | Numpy | Datetime | CSV | OS (path, join)  
 
+# Table of Content
+There are three branches in this repository:  
+* **master** :: main branch  
+* **hle** :: contains IMDb data and ETL of this database, pictures of final database, tables, progress bar, etc.  
+* **agun** ::  contains Netflix data and ETL of this database  
+
 ## Finding Data (Extract)  
 Link to both CSVs:  
 
@@ -41,22 +47,32 @@ The following tables are loaded into SQL Lite:
 ### Method of Loading
 * **imdb_movies.csv**  :: SQLAlchemy with Class and Tables creation to load Pandas DataFrame into SQL Lite through engine/connection  
 * **netflix_movie.csv** :: manual loaded by SQL Lite -> File -> Import  
-* **netflix_tv_show.csv**  :: manual loaded by SQL Lite -> File -> Import 
+* **netflix_tv_show.csv**  :: manual loaded by SQL Lite -> File -> Import  
 
-## Final Images of Loaded SQL Lite DB
-* **All Tables**
+## Final Images of Loaded SQL Lite DB  
+* **All Tables**  
 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="100%" max-width="100%">
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="100%" max-width="100%">  
 
 * **imdb_movies.csv**  
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png" alt="error" max-height="100%" max-width="100%">
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png" alt="error" max-height="100%" max-width="100%">  
 
 
 * **netflix_movie.csv**  
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png" alt="error" max-height="100%" max-width="100%">
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png" alt="error" max-height="100%" max-width="100%">   
 
 
 * **netflix_tv_show.csv** 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="100%" max-width="100%">
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="100%" max-width="100%">  
 
-## Other Considerations
+## Other Considerations with SQL Alchemy
+* Since the database is too large to upload to GitHub, recommend to download to local storage and use the codes in this repository to replicate the project if desired  
+* Loading data takes sometimes especially a large one, so progress bar was built in for Jupyter Notebook and records/ progress percentage messages are added to both Jupter Notebook and Python to help user track the progress, as below  
+
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Progress_Bar_Finshed.png" alt="error" max-height="100%" max-width="100%">  
+
+* Upon running the program, there will be two more folders created to store the cleaned csv and final SQL Lite DB. Final folder structure as below:  
+
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="100%" max-width="100%">  
+
+

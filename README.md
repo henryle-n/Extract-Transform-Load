@@ -113,7 +113,7 @@ The following tables are loaded into SQL Lite:
 </p>  
 
 
-## Final Images of Loaded SQLite DB  
+## Final Loaded SQLite DB Images 
 * **All tables**  
 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="30%" max-width="30%">  

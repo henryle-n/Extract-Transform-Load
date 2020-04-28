@@ -1,3 +1,7 @@
+netflix_movie.csv
+netflix_tv_show.csv
+netflix_titles.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

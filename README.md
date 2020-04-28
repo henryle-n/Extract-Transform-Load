@@ -6,7 +6,7 @@ The main objectives are to clean up, process, load final version into SQL Lite D
 
 ## Tools/ Techniques/ Modules  
 * Python | SQLAlchemy | SQL Lite  
-* Pandas | TQDM | Numpy | Datetime | CSV | OS (path, join)  
+* Pandas | TQDM | Numpy | Datetime | CSV | OS (path, join) | UTF-8 Encoding
 
 ## Table of Content
 There are three branches in this repository:  

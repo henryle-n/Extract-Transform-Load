@@ -1,8 +1,12 @@
 # Extract-Transform-Load-DB  
 ## Overview   
-In this project, team of two: Henry Le and Abimbola Agunloye processed two downloaded CSV files from Kaggle.com.   
+In this project, team of two: Henry Le and Abimbola Agunloye processed two downloaded CSV files from Kaggle.com.  
+<hr>
 The main objectives are to clean up, process, load final version into SQL Lite DataBase.   
 
+## Tools/ Techniques/ Modules  
+* Python | SQLAlchemy | SQL Lite  
+* Pandas | TQDM | Numpy | Datetime | CSV | OS (path, join)  
 
 ## Finding Data (Extract)  
 Link to both CSVs:  
@@ -55,3 +59,4 @@ The following tables are loaded into SQL Lite:
 * **netflix_tv_show.csv** 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="100%" max-width="100%">
 
+## Other Considerations

@@ -107,11 +107,11 @@ The following tables are loaded into SQL Lite:
 
 * Since the database is too large to upload to GitHub, recommend to download to local storage and use the codes in this repository to replicate the project if desired  
 
-* Loading data takes good amount of time especially a large one, so progress bar was built in for Jupyter Notebook and records/ progress percentage messages are added to both Jupter Notebook and Python to help user track the progress, as below. Note that, the progress bar only works in Jupyter Notebook. So far, I'm unable to find any stable modules to work with both Python and Jupyter Notebook.  
-  - In Jupyter Notebook  
-   <p align="center">
-    <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/PrgBar_in_jpnb.gif" alt="error"></p>  
-    - In Terminal    
+* Loading data takes good amount of time especially a large one, so progress bar was built in for Jupyter Notebook and records/ progress percentage messages are added to both Jupter Notebook and Python to help user track the progress, as below. Note that, the progress bar only works in Jupyter Notebook. So far, I'm unable to find any stable modules to work with both Python and Jupyter Notebook.
+
+<p align="center">
+  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/PrgBar_in_jpnb.gif" alt="error">
+</p>
 <p align="center">  
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/PrgBar_in_Terminal.gif" alt="error" max-height="50%" max-width="50%">
 </p>

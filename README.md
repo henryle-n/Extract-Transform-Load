@@ -27,6 +27,7 @@ After  datasets were downloaded, performed ETL on the data as the following:
 * Convert data: empty string to number, float to integer, string to date  
 * Replacing data: replace letters in 'id' column with empty string, '$' for 'USD' currency, fill_na for missing data  
 * Split data: currency and value into two columns  
+* Re-name and re-arrange columns  
 
 ### Netflix File  
 * Drop un-necessary columns  
@@ -34,6 +35,7 @@ After  datasets were downloaded, performed ETL on the data as the following:
 * Convert string (object) dtype to integer with numpy module  
 * Split entire database into 'tv_show' and 'movie' based on column 'type'  
 * Exported to CSV and get ready for loading into SQL Lite  
+* Re-name and re-arrange columns  
 
 ## Loading Data in to SQL Lite  
 ### DataBase Selection  

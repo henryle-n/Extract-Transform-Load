@@ -78,6 +78,6 @@ The following tables are loaded into SQL Lite:
 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="100%" max-width="100%">  
 
-* To automate the process, the Jupyter Notebook contains code to convert all codes into a Python file than can be run from terminal, after conversion, remmember to comment out the convertion to prevent accidentally delete the python file
+* To automate the process, the Jupyter Notebook contains code to convert all codes into a Python file than can be run from terminal, after conversion, remmember to comment out the convertion to prevent accidental deletion of the python file
 
 

@@ -42,17 +42,16 @@ The following tables are loaded into SQL Lite:
 ## Final Images of Loaded SQL Lite DB
 * **All Tables**
 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="60%" max-width="60%"><p>
-  
-![all table](https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png)
-
-
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="100%" max-width="100%">
 
 * **imdb_movies.csv**  
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png" alt="error" max-height="100%" max-width="100%">
 
 
 * **netflix_movie.csv**  
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png" alt="error" max-height="100%" max-width="100%">
+
 
 * **netflix_tv_show.csv** 
-
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="100%" max-width="100%">
 

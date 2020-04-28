@@ -1,4 +1,4 @@
-# Let's Cook! &nbsp;&nbsp;&nbsp;&nbsp; Extract -> Transform -> Load
+# Let's Cook! &nbsp;&nbsp; Extract -> Transform -> Load
 ## Overview   
 In this project, team of two: ***Henry Le*** and ***Abimbola Agunloye*** processed two downloaded CSV files from Kaggle.com.   
 <br>

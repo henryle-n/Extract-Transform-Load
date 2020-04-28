@@ -40,7 +40,7 @@ Link to both CSVs:
 * IMDB : https://www.kaggle.com/PromptCloudHQ/imdb-data  
 
 ## Data Cleanup & Analysis (Transform)  
-After two datasets were downloaded, performed ETL on the data as the following:  
+After two datasets were downloaded, performed data transformation as the following:  
 
 ### IMDb File  (by: **Henry Le**)
 * Convert data: empty string to number, float to integer, string to date  

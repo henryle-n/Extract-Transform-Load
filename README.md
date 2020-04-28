@@ -1,8 +1,11 @@
 # Let's Cook! Extract -> Transform -> Load
 ## Overview   
-In this project, team of two: ***Henry Le*** and ***Abimbola Agunloye*** processed two downloaded CSV files from Kaggle.com.  
+In this project, team of two: ***Henry Le*** and ***Abimbola Agunloye*** processed two downloaded CSV files from Kaggle.com.   
+<br>
+The main objectives are to clean up, process, load final version into SQL Lite DataBase.  
+<br>
 <hr>
-The main objectives are to clean up, process, load final version into SQL Lite DataBase.
+
 
 <p align="center">
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/letscook.jpg" alt="error" max-height="50%" max-width="50%">

@@ -2,7 +2,7 @@
 ## Overview   
 In this project, team of two: ***Henry Le*** and ***Abimbola Agunloye*** processed two downloaded CSV files from Kaggle.com.   
 <br>
-The main objectives are to clean up, process, load final version into SQL Lite DataBase.  
+The main objectives are to clean up, process, load final version into SQLite DataBase.  
 <br>
 <hr>
 
@@ -13,7 +13,7 @@ The main objectives are to clean up, process, load final version into SQL Lite D
 
 
 ## Tools/ Techniques/ Modules  
-* Python | SQLAlchemy | SQL Lite  
+* Python | SQLAlchemy | SQLite3  
 * Pandas | TQDM | Numpy | Datetime | CSV | OS (path, join) | UTF-8 Encoding
 
 ## Table of Content
@@ -60,7 +60,7 @@ The following tables are loaded into SQL Lite:
 * **netflix_movie.csv** :: manually loaded by SQL Lite -> File -> Import  
 * **netflix_tv_show.csv**  :: manually loaded by SQL Lite -> File -> Import   
 
-## Final Images of Loaded SQL Lite DB  
+## Final Images of Loaded SQLite DB  
 * **All tables**  
 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="30%" max-width="30%">  
@@ -77,7 +77,7 @@ The following tables are loaded into SQL Lite:
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="30%" max-width="30%">  
 
 ## Summary
-* Both downloaded datasets are not cleaned, lots of issues such as numbers mixed with strings, missing data, special characters, inconsistent data in the same columns, date time are all in one columns, etc. These create many issues with DataType mismatch upon pushing to SQL Lite by SQL Alchemy
+* Both downloaded datasets are not cleaned, lots of issues such as numbers mixed with strings, missing data, special characters, inconsistent data in the same columns, date time are all in one columns, etc. These create many issues with DataType mismatch upon pushing to SQLite by SQL Alchemy
 
 * SQL Lite Limitations: can processed interger upto 8-bit by default, thus was causing errors upon using SQLAlchemy to load data. Upon intensive research online and from documentations, found the solutions to assign integer-64-bit to SQL Lite
 

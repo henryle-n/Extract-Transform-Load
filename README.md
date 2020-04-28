@@ -109,8 +109,9 @@ The following tables are loaded into SQL Lite:
 
 * Loading data takes good amount of time especially a large one, so progress bar was built in for Jupyter Notebook and records/ progress percentage messages are added to both Jupter Notebook and Python to help user track the progress, as below. Note that, the progress bar only works in Jupyter Notebook. So far, I'm unable to find any stable modules to work with both Python and Jupyter Notebook.
    - In Jupyter Notebook  
-   <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/PrgBar_in_jpnb.gif" alt="error" max-height="50%" max-width="50%"></kbd>  
-   <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Progress_Bar_Finshed.png" alt="error" max-height="50%" max-width="50%"></kbd>  
+   <p align="center">
+    <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/PrgBar_in_jpnb.gif" alt="error">  
+    <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Progress_Bar_Finshed.png" alt="error" max-height="50%" max-width="50%"></p>  
    - In Terminal    
 <p align="center">  
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/PrgBar_in_Terminal.gif" alt="error" max-height="50%" max-width="50%">

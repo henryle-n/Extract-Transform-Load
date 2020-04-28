@@ -21,12 +21,13 @@ Link to both CSVs:
 * IMDB : https://www.kaggle.com/PromptCloudHQ/imdb-data  
 
 ## Data Cleanup & Analysis (Transform)  
-After  datasets were downloaded, performed ETL on the data as the following:  
+After two datasets were downloaded, performed ETL on the data as the following:  
 
 ### IMDb File  
 * Convert data: empty string to number, float to integer, string to date  
 * Replacing data: replace letters in 'id' column with empty string, '$' for 'USD' currency, fill_na for missing data  
 * Split data: currency and value into two columns  
+* Break up one columns to multiple ones
 * Re-name and re-arrange columns  
 
 ### Netflix File  
@@ -82,6 +83,6 @@ The following tables are loaded into SQL Lite:
 
 * Program was built with an option to ask user to select how much data need to be loaded to prevent program from crashing on slower computing devices
 
-* To automate the process, the Jupyter Notebook contains code to convert all codes into a Python file than can be run from terminal, after conversion, remmember to comment out the convertion to prevent accidental deletion of the python file
+* To automate the process, the Jupyter Notebook contains codes to convert all codes into a Python file than can be run from terminal. Please remember that after conversion, comment out the conversion part to prevent accidental deletion of the python file
 
 

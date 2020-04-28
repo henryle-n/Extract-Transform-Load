@@ -99,9 +99,9 @@ The following tables are loaded into SQL Lite:
   - In Jupyter Notebook  
   
 <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad.PNG" alt="error" max-height="50%" max-width="50%"></kbd>  
- 
-  - In Terminal  
 
+  - In Terminal  
+  
 <p align="center">
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad_Terminal.PNG" alt="error" max-height="50%" max-width="50%">
 </p>   

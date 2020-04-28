@@ -48,9 +48,9 @@ The following tables are loaded into SQL Lite:
 * **netflix_tv_show.csv**  
 
 ### Method of Loading
-* **imdb_movies.csv**  :: SQLAlchemy with Class and Tables creation to load Pandas DataFrame into SQL Lite through engine/connection  
-* **netflix_movie.csv** :: manual loaded by SQL Lite -> File -> Import  
-* **netflix_tv_show.csv**  :: manual loaded by SQL Lite -> File -> Import  
+* **imdb_movies.csv**  :: SQLAlchemy with Class and Table creation to load Pandas DataFrame into SQL Lite via engine/connection  
+* **netflix_movie.csv** :: manually loaded by SQL Lite -> File -> Import  
+* **netflix_tv_show.csv**  :: manually loaded by SQL Lite -> File -> Import   
 
 ## Final Images of Loaded SQL Lite DB  
 * **All Tables**  
@@ -68,21 +68,25 @@ The following tables are loaded into SQL Lite:
 * **netflix_tv_show.csv** 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="30%" max-width="30%">  
 
-## Other Considerations with SQL Alchemy
+## Summary
+* Both downloaded datasets are not cleaned, lots of issues such as numbers mixed with strings, missing data, special characters, inconsistent data in the same columns, date time are all in one columns, etc. These create many issues with DataType mismatch upon pushing to SQL Lite by SQL Alchemy
+
+* SQL Lite Limitations: can processed interger upto 8-bit by default, thus was causing errors upon using SQLAlchemy to load data. Upon intensive research online and from documentations, found the solutions to assign integer-64-bit to SQL Lite
+
+
+## Other Considerations with SQL Alchemy  
+* Program was built with an option to ask user to select how much data need to be loaded to prevent program from crashing on slower computing devices  
+
+* To automate the process, the Jupyter Notebook contains codes (towards the end of the notebook) to convert all codes into a Python file than can be run from terminal. Please remember that after conversion, comment out the conversion part to prevent accidental deletion of the python file  
+
 * Since the database is too large to upload to GitHub, recommend to download to local storage and use the codes in this repository to replicate the project if desired  
 * Loading data takes sometimes especially a large one, so progress bar was built in for Jupyter Notebook and records/ progress percentage messages are added to both Jupter Notebook and Python to help user track the progress, as below  
 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Progress_Bar_Finshed.png" alt="error" max-height="50%" max-width="50%">  
 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/LoadDataInTerminal.png" alt="error" max-height="100%" max-width="100%">  
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/LoadDataInTerminal.png" alt="error" max-height="50%" max-width="50%">  
 
 
 * Upon running the program, there will be two more folders created to store the cleaned csv and final SQL Lite DB. Final folder structure as below:  
 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="100%" max-width="100%">  
-
-* Program was built with an option to ask user to select how much data need to be loaded to prevent program from crashing on slower computing devices
-
-* To automate the process, the Jupyter Notebook contains codes to convert all codes into a Python file than can be run from terminal. Please remember that after conversion, comment out the conversion part to prevent accidental deletion of the python file
-
-
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="50%" max-width="50%">  

@@ -74,37 +74,24 @@ The following tables are loaded into SQL Lite:
 * **netflix_movie.csv** :: manually loaded by SQL Lite -> File -> Import  
 * **netflix_tv_show.csv**  :: manually loaded by SQL Lite -> File -> Import   
 
-## Final Images of Loaded SQLite DB  
-* **All tables**  
-
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="30%" max-width="30%">  
-
-* **imdb_movies** table 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png" alt="error" max-height="30%" max-width="30%">  
-
-
-* **netflix_movie**  table
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png" alt="error" max-height="30%" max-width="30%">   
-
-
-* **netflix_tv_show** table 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="30%" max-width="30%">  
-
 ## Summary
 * Both downloaded datasets are not cleaned, lots of issues such as numbers mixed with strings, missing data, special characters, inconsistent data in the same columns, date time are all in one columns, etc. These create many issues with DataType mismatch upon pushing to SQLite by SQL Alchemy
 
 * SQL Lite Limitations: can processed interger upto 8-bit by default, thus was causing errors upon using SQLAlchemy to load data. Upon intensive research online and from documentations, found the solutions to assign integer-64-bit to SQL Lite
 
 
+
 ## Other Considerations with SQL Alchemy  
 * Program was built with an option to ask user to select how much data need to be loaded to prevent program from crashing on slower computing devices  
-   - In Jupyter Notebook
-   <kbd><img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad.PNG" alt="error" max-height="50%" max-width="50%"></kbd>
-   - In Terminal  
-     
- <p align="center">
-  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/SelectDataLoad_Terminal.PNG" alt="error" max-height="50%" max-width="50%">
-</p>   
+
+<p align="center">  
+  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/user_input_jpnb.gif" alt="error" max-height="50%" max-width="50%">
+</p>
+
+<p align="center">  
+  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/user_input_terminal.gif" alt="error" max-height="50%" max-width="50%">
+ </p>
+       
 
 * To automate the process, the Jupyter Notebook contains codes (in ***Part 3*** towards the end of the notebook) to convert all codes into a Python file than can be run from terminal. Please remember that after conversion, comment out the conversion part to prevent accidental deletion of the python file  
 
@@ -124,3 +111,21 @@ The following tables are loaded into SQL Lite:
 <p align="center">
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="50%" max-width="50%">
 </p>  
+
+
+## Final Images of Loaded SQLite DB  
+* **All tables**  
+
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="30%" max-width="30%">  
+
+* **imdb_movies** table 
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png" alt="error" max-height="30%" max-width="30%">  
+
+
+* **netflix_movie**  table
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png" alt="error" max-height="30%" max-width="30%">   
+
+
+* **netflix_tv_show** table 
+<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="30%" max-width="30%">  
+

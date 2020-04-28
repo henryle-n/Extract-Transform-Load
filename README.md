@@ -20,7 +20,7 @@ Link to both CSVs:
 * Netflix: https://www.kaggle.com/shivamb/netflix-shows  
 * IMDB : https://www.kaggle.com/PromptCloudHQ/imdb-data  
 
-## Data Cleanup & Analysis (Tranform)  
+## Data Cleanup & Analysis (Transform)  
 After  datasets were downloaded, performed ETL on the data as the following:  
 
 ### IMDb File  

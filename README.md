@@ -1,4 +1,4 @@
-# Extract-Transform-Load-DB  
+# Extract-Transform-Load | SQLAlchemy and SQL Lite
 ## Overview   
 In this project, team of two: ***Henry Le*** and ***Abimbola Agunloye*** processed two downloaded CSV files from Kaggle.com.  
 <hr>

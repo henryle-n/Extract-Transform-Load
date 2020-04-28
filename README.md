@@ -53,11 +53,11 @@ The following tables are loaded into SQL Lite:
 * **netflix_tv_show.csv**  :: manually loaded by SQL Lite -> File -> Import   
 
 ## Final Images of Loaded SQL Lite DB  
-* **All Tables**  
+* **All tables**  
 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="30%" max-width="30%">  
 
-* **imdb_movies.csv** table 
+* **imdb_movies** table 
 <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png" alt="error" max-height="30%" max-width="30%">  
 
 

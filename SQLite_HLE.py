@@ -758,18 +758,18 @@ print(">>> All session(s) closed")
 # In[ ]:
 
 
-# define file name
-python_file_name = 'SQLite_HLE.py'
+# # define file name
+# python_file_name = 'SQLite_HLE.py'
 
-# if there is already old file, then delete and reprocess a new one
-if os.path.exists(python_file_name):
-    os.remove(python_file_name)
+# # if there is already old file, then delete and reprocess a new one
+# if os.path.exists(python_file_name):
+#     os.remove(python_file_name)
 
-# if exception raises, just skip the export process
-try:
-    get_ipython().system('jupyter nbconvert --to python hle_IMDb.ipynb')
-    os.rename("hle_IMDb.py", python_file_name)
-except Exception:
-    print(Exception)
-    pass
+# # if exception raises, just skip the export process
+# try:
+#     get_ipython().system('jupyter nbconvert --to python hle_IMDb.ipynb')
+#     os.rename("hle_IMDb.py", python_file_name)
+# except Exception:
+#     print(Exception)
+#     pass
 

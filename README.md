@@ -8,7 +8,7 @@ The main objectives are to clean up, process, load final version into SQL Lite D
 * Python | SQLAlchemy | SQL Lite  
 * Pandas | TQDM | Numpy | Datetime | CSV | OS (path, join)  
 
-# Table of Content
+## Table of Content
 There are three branches in this repository:  
 * **master** :: main branch  
 * **hle** :: contains IMDb data and ETL of this database, pictures of final database, tables, progress bar, etc.  

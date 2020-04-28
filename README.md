@@ -18,9 +18,20 @@ The main objectives are to clean up, process, load final version into SQLite Dat
 
 ## Table of Content
 There are three branches in this repository:  
-* **master** :: main branch  
+* **master** :: main branch contains these files:
+    - **ipynb_checkpoints** : jupyter notebooks checkpoints    
+    - **In_Dev** : other file versions with new development
+    - **Pictures** : contains pictures of exported db, progress bar, folder hierachy, etc.
+    - **SQLite_HLE.py** : python app converted from ***hle_IMDb.ipynb***
+    - **agun_netflix.ipynb**   : jupyter notebook developed by **Abimbola Agunloye** 
+    - **hle_IMDb.ipynb** : jupyter notebook developed by **Henry Le**  
+    
 * **hle** :: contains IMDb data and ETL of this database, pictures of final database, tables, progress bar, etc.  
 * **agun** ::  contains Netflix data and ETL of this database  
+
+
+
+
 
 ## Finding Data (Extract)  
 Link to both CSVs:  
@@ -31,14 +42,14 @@ Link to both CSVs:
 ## Data Cleanup & Analysis (Transform)  
 After two datasets were downloaded, performed ETL on the data as the following:  
 
-### IMDb File  
+### IMDb File  (by: **Henry Le**)
 * Convert data: empty string to number, float to integer, string to date  
 * Replacing data: replace letters in 'id' column with empty string, '$' for 'USD' currency, fill_na for missing data  
 * Split data: currency and value into two columns  
 * Break up one columns to multiple ones
 * Re-name and re-arrange columns  
 
-### Netflix File  
+### Netflix File  (by: **Abimbola Agunloye**)
 * Drop un-necessary columns  
 * Extract data, month, year from one columns and split into 3 columns  
 * Convert string (object) dtype to integer with numpy module  

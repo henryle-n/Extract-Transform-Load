@@ -116,21 +116,21 @@ The following tables are loaded into SQL Lite:
 ## Final Loaded SQLite DB Images
 <ul>
   <li>
-    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png"><span style = "color:blue; font-weight:700">Click here</span>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png"><span style = "color:blue;"><b>Click here</b></span>
     </a> to see all loaded table image.<br>
   </li>
 
   <li>
-    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png"><span style = "color:blue; font-weight:700">Click here</span>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png"><span style = "color:blue;"><b>Click here</b></span>
     </a> to see the loaded <b>imdb_movies</b> table image.<br>
   </li>
 
   <li>
-    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png"><span style = "color:blue; font-weight:700">Click here</span>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png"><span style = "color:blue;"><b>Click here</b></span>
     </a> to see the loaded <b>netflix_movie</b> table image.<br>
   </li>
 
   <li>
-    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png"><span style = "color:blue; font-weight:700">Click here</span>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png"><span style = "color:blue;"><b>Click here</b></span>
     </a> to see the loaded <b>netflix_tv_show</b> image.<br>
   </li>

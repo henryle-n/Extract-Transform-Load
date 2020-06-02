@@ -113,19 +113,24 @@ The following tables are loaded into SQL Lite:
 </p>  
 
 
-## Final Loaded SQLite DB Images 
-* **All tables**  
+## Final Loaded SQLite DB Images
+<ul>
+  <li>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png"><span style = "color:blue">**Click here**</span>
+    </a> to see all loaded table image.<br>
+  </li>
 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="30%" max-width="30%">  
+  <li>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png"><span style = "color:blue">**Click here**</span>
+    </a> to see the loaded <b>imdb_movies</b> table image.<br>
+  </li>
 
-* **imdb_movies** table 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png" alt="error" max-height="30%" max-width="30%">  
+  <li>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png"><span style = "color:blue">**Click here**</span>
+    </a> to see the loaded <b>netflix_movie</b> table image.<br>
+  </li>
 
-
-* **netflix_movie**  table
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png" alt="error" max-height="30%" max-width="30%">   
-
-
-* **netflix_tv_show** table 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="30%" max-width="30%">  
-
+  <li>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png"><span style = "color:blue">**Click here**</span>
+    </a> to see the loaded <b>netflix_tv_show</b> image.<br>
+  </li>

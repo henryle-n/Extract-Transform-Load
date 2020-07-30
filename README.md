@@ -1,40 +1,32 @@
 # Let's Cook! &nbsp; --> Extract --> Transform --> Load
-## Overview   
-In this project, team of two: ***Henry Le*** and ***Abimbola Agunloye*** processed two downloaded CSV files from Kaggle.com.   
-<br>
-The main objectives are to clean up, process, load final version into SQLite DataBase.  
-<br>
-<hr>
+## Background
+Often in time, data is not always "clean" to be analyzed, plotted or even for machine learning. In this project, two `.csv` files were downloaded from Kaggle that have several issues such as missing values, datetime format, datatype mismatch, etc. A team of two: ***Henry Le*** and ***Abimbola Agunloye*** utilized Python to perform Extract, Transform and Load operations to resolve mentioned issues. Cleaned version of data is then loaded into SQLite DataBase.
 
 
 <p align="center">
-  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/maintheme_pic.gif" alt="error" max-height="50%" max-width="50%">
+  <img src="./Pictures/Gifs_and_Pics/maintheme_pic.gif" alt="error" max-height="50%" max-width="50%">
 </p>  
 
-&nbsp; &nbsp; &nbsp; <i><span style="font-family:metronova; font-size:0.2em;">Created by: Henry Le | Apr. 27, 2020</span></i>
+&nbsp; &nbsp; &nbsp; <i><span style="font-family:metronova; font-size:12px"></span></i>
 
-<hr>
+## Languages, Tools & Technologies
+* **Languages:** 
+  * Python | SQL
+* **Python Libraries/ Modules:**
+  * SQLAlchemy | SQLite3 | Pandas | TQDM | Numpy | Datetime | CSV | OS
+* **SQL Database:**
+  * SQLite
+* **Software/ Applications:**
+  * Visual Studio Code | Jupyter Notebook
+* **Operating Systems:**
+  * Windows 10 Pro
 
-## Tools/ Techniques/ Modules  
-* Python | SQLAlchemy | SQLite3  
-* Pandas | TQDM | Numpy | Datetime | CSV | OS (path, join) | UTF-8 Encoding
+## Table of Content (master branch)
 
-## Table of Content
-There are three branches in this repository:  
-* **master** :: main branch contains these files:
-    - **ipynb_checkpoints** : jupyter notebooks checkpoints    
-    - **In_Dev** : other file versions with new development
-    - **Pictures** : contains pictures of exported db, progress bar, folder hierachy, etc.
-    - **SQLite_HLE.py** : python app converted from ***hle_IMDb.ipynb***
-    - **agun_netflix.ipynb**   : jupyter notebook developed by **Abimbola Agunloye** 
-    - **hle_IMDb.ipynb** : jupyter notebook developed by **Henry Le**  
-    
-* **hle** :: contains IMDb data and ETL of this database, pictures of final database, tables, progress bar, etc.  
-* **agun** ::  contains Netflix data and ETL of this database  
-
-
-
-
+Folders/ Files | Descriptions
+---- | ----- 
+Pictures | pictures of finished loaded SQLite Database, Progress Bar, and Readme gif files
+|
 
 ## Finding Data (Extract)  
 Link to both CSVs:  

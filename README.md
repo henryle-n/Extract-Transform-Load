@@ -14,7 +14,7 @@ Data is not always "clean" to be analyzed, plotted or even for machine learning.
 * **Languages:** 
   * Python | SQL
 * **Python Libraries/ Modules:**
-  * SQLAlchemy | SQLite3 | Pandas | TQDM | Numpy | Datetime | CSV | OS
+  * SQLAlchemy | Psycopg | SQLite3 | Pandas | TQDM | Numpy | Datetime | CSV | OS
 * **SQL Database:**
   * SQLite
 * **Software/ Applications:**

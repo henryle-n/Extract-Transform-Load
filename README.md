@@ -1,5 +1,5 @@
 # Let's Cook! &nbsp; --> Extract --> Transform --> Load
-## Background
+## 1. Background
 Often in time, data is not always "clean" to be analyzed, plotted or even for machine learning. In this project, two `.csv` files were downloaded from Kaggle that have several issues such as missing values, datetime format, datatype mismatch, etc. A team of two: ***Henry Le*** and ***Abimbola Agunloye*** utilized Python to perform Extract, Transform and Load operations to resolve mentioned issues. Cleaned version of data is then loaded into SQLite DataBase.
 
 
@@ -9,7 +9,8 @@ Often in time, data is not always "clean" to be analyzed, plotted or even for ma
 
 &nbsp; &nbsp; &nbsp; <i><span style="font-family:metronova; font-size:12px"></span></i>
 
-## Languages, Tools & Technologies
+  
+## 2. Languages, Tools & Technologies
 * **Languages:** 
   * Python | SQL
 * **Python Libraries/ Modules:**
@@ -21,108 +22,104 @@ Often in time, data is not always "clean" to be analyzed, plotted or even for ma
 * **Operating Systems:**
   * Windows 10 Pro
 
-## Table of Content (master branch)
+## 3. Table of Content (master branch)
 
 Folders/ Files | Descriptions
 ---- | ----- 
 Pictures | pictures of finished loaded SQLite Database, Progress Bar, and Readme gif files
-|
+ agun_netflix.ipynb | ETL developed by A. Agunloye on Netflix Movies data 
+ hle_IMDb.ipynb | ETL developed by H. Le on IMDb Movies data, also included Python ORM to load data to SQLite 
 
-## Finding Data (Extract)  
-Link to both CSVs:  
-
+## 4. Process Overview
+### 4.1 Data (Extract) 
+Two movies datasets were downloaded from Kaggle:
 * Netflix: https://www.kaggle.com/shivamb/netflix-shows  
-* IMDB : https://www.kaggle.com/PromptCloudHQ/imdb-data  
-
-## Data Cleanup & Analysis (Transform)  
+* IMDB : https://www.kaggle.com/PromptCloudHQ/imdb-data 
+  
+### 4.2 Data Cleanup & Analysis (Transform)  
 After two datasets were downloaded, performed data transformation as the following:  
 
-### IMDb File  (by: **Henry Le**)
-* Convert data: empty string to number, float to integer, string to date  
-* Replacing data: replace letters in 'id' column with empty string, '$' for 'USD' currency, fill_na for missing data  
-* Split data: currency and value into two columns  
-* Break up one columns to multiple ones
-* Re-name and re-arrange columns  
+#### IMDb File  (by: **Henry Le**)
+* Convert data: empty string to number, float to integer, string to date.
+* Replacing data: replace letters in '**id**' column with empty string, '**$**' for '**USD**' currency, **fill_na** for missing data.  
+* Split data: currency and value into two columns.  
+* Break up one columns to multiple ones.
+* Re-name and re-arrange columns.
+* Create Python Table Class to directly load data into SQLite DB.
 
-### Netflix File  (by: **Abimbola Agunloye**)
-* Drop un-necessary columns  
-* Extract data, month, year from one columns and split into 3 columns  
-* Convert string (object) dtype to integer with numpy module  
-* Split entire database into 'tv_show' and 'movie' based on column 'type'  
-* Exported to CSV and get ready for loading into SQL Lite  
-* Re-name and re-arrange columns  
-
-## Loading Data in to SQL Lite  
-### DataBase Selection  
-Since the data is relational database with columns and rows, SQL Lite is chosen for the project instead of un-relational DB like MongoDB  
+#### Netflix File  (by: **Abimbola Agunloye**)
+* Drop un-necessary columns.  
+* Extract data, month, year from one columns and split into 3 columns.  
+* Convert string (object) dtype to integer with numpy.  
+* Split entire database into 'tv_show' and 'movie' based on column 'type'.  
+* Re-name and re-arrange columns. 
+* Export cleaned data to CSV and get ready for loading into SQL Lite.
+ 
+### 4.3 Loading Data in to SQL Lite (Load)
+#### DataBase Selection  
+Since downloaded data is relational database, SQL Lite is chosen for the project instead of un-relational DB like MongoDB.  
 
 The following tables are loaded into SQL Lite:  
 * **imdb_movies.csv**  
 * **netflix_movie.csv**  
 * **netflix_tv_show.csv**  
 
-### Method of Loading
-* **imdb_movies.csv**  :: SQLAlchemy with Class and Table creation to load Pandas DataFrame into SQL Lite via engine/connection  
-* **netflix_movie.csv** :: manually loaded by SQL Lite -> File -> Import  
-* **netflix_tv_show.csv**  :: manually loaded by SQL Lite -> File -> Import   
+#### Method of Loading
+* **imdb_movies.csv**: SQLAlchemy with Class and Table creation to load Pandas DataFrame into SQL Lite via engine/connection.  
+* **netflix_movie.csv**: manually loaded by SQL Lite -> File -> Import.  
+* **netflix_tv_show.csv**: manually loaded by SQL Lite -> File -> Import.   
 
-## Summary
-* Both downloaded datasets are not cleaned, lots of issues such as numbers mixed with strings, missing data, special characters, inconsistent data in the same columns, date time are all in one columns, etc. These create many issues with DataType mismatch upon pushing to SQLite by SQL Alchemy
+## 5. Summary
+* Both downloaded datasets are not cleaned, lots of issues such as numbers mixed with strings, missing data, special characters, inconsistent data in the same columns, date time are all in one columns, etc. These create many issues with DataType mismatch upon pushing to SQLite from Python & SQLAlchemy.
 
-* SQL Lite Limitations: can processed interger upto 8-bit by default, thus was causing errors upon using SQLAlchemy to load data. Upon intensive research online and from documentations, found the solutions to assign integer-64-bit to SQL Lite
+* SQL Lite Limitations: can processed interger upto 8-bit by default, thus was causing errors upon using SQLAlchemy to load data. Upon intensive research online and from documentations, found the solutions to assign integer-64-bit to SQL Lite.
 
-
-
-## Other Considerations with SQL Alchemy  
-* Program was built with an option to let user to select amount of data to load. This helps prevent program from crashing on slower computing devices  
+## 6. Other Considerations with SQLAlchemy  
+* Program was built with an option to let user to select amount of data to load. This helps prevent program from crashing on slower computing devices.  
 
 <p align="center">  
-  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/user_input_jpnb.gif" alt="error" max-height="50%" max-width="50%">
+  <img src="./Pictures/Gifs_and_Pics/user_input_jpnb.gif" alt="error" max-height="50%" max-width="50%">
 </p>
 
-<p align="center">  
-  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/user_input_terminal.gif" alt="error" max-height="50%" max-width="50%">
- </p>
-       
-
-* To automate the process, the Jupyter Notebook contains codes (in ***Part 3*** towards the end of the notebook) to convert all codes into a Python file than can be run from terminal. Please remember that after conversion, comment out the conversion part to prevent accidental deletion of the python file  
-
-* Since the database is too large to upload to GitHub, recommend to download to local storage and use the codes in this repository to replicate the project if desired  
+* Since the database is too large to upload to GitHub, recommend to download to local storage and use the codes in this repository to replicate the project if desired.  
 
 * Loading data takes good amount of time especially a large one, so progress bar was built in for Jupyter Notebook and records/ progress percentage messages are added to both Jupter Notebook and Python to help user track the progress, as below. Note that, the progress bar only works in Jupyter Notebook. So far, I'm unable to find any stable modules to work with both Python and Jupyter Notebook.
 
 <p align="center">
-  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/PrgBar_in_jpnb.gif" alt="error">
+  <img src="./Pictures/Gifs_and_Pics/PrgBar_in_jpnb.gif" alt="error">
 </p>
-<p align="center">  
-  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/PrgBar_in_Terminal.gif" alt="error" max-height="50%" max-width="50%">
-</p>
-
 
 * Upon running the program, there will be two more folders created to store the cleaned csv and final SQL Lite DB. Final folder structure as below:  
 <p align="center">
-  <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/Final_Folders.png" alt="error" max-height="50%" max-width="50%">
+  <img src="./Pictures/SQLite_DB_Pics/Final_Folders.png" alt="error" max-height="50%" max-width="50%">
 </p>  
 
 
-## Final Loaded SQLite DB Images
+## 7. Final Loaded SQLite DB Images
 <ul>
   <li>
-    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png"><span style = "color:blue;"><b>Click here</b></span>
-    </a> to see all loaded table image<br>
+    <a class = "btn" href="./Pictures/ETL_DB.png"><span style = "color:blue;"><b>Click here</b></span>
+    </a> to see all loaded table image.<br>
   </li>
 
   <li>
-    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png"><span style = "color:blue;"><b>Click here</b></span>
-    </a> to see the loaded <b>imdb_movies</b> table image<br>
+    <a class = "btn" href="./Pictures/ETL_DB_imdb_movies.png"><span style = "color:blue;"><b>Click here</b></span>
+    </a> to see the loaded <b>imdb_movies</b> table image.<br>
   </li>
 
   <li>
-    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png"><span style = "color:blue;"><b>Click here</b></span>
-    </a> to see the loaded <b>netflix_movie</b> table image<br>
+    <a class = "btn" href="./Pictures/ETL_DB_netflix_movie.png"><span style = "color:blue;"><b>Click here</b></span>
+    </a> to see the loaded <b>netflix_movie</b> table image.<br>
   </li>
 
   <li>
     <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png"><span style = "color:blue;"><b>Click here</b></span>
-    </a> to see the loaded <b>netflix_tv_show</b> image<br>
+    </a> to see the loaded <b>netflix_tv_show</b> image.<br>
   </li>
+</ul>
+
+## 8. How to Use:
+* Clone this repository to local PC:
+   * `git clone https://github.com/henryle-n/Extract-Transform-Load.git`
+* Download Data from Kaggle (section 4.1)
+* Depends on the user's folder structure, data load path in each Jupyter Notebooks may need to be re-configured.

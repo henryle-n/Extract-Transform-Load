@@ -20,7 +20,7 @@ Data is not always "clean" to be analyzed, plotted or even for machine learning.
 * **Software/ Applications:**
   * Visual Studio Code | Jupyter Notebook
 * **Operating Systems:**
-  * Windows 10 Pro
+  * Windows 10 Pro ver. 1909
 
 ## 3. Table of Content (master branch)
 

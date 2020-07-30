@@ -89,31 +89,25 @@ The following tables are loaded into SQL Lite:
   <img src="./Pictures/Gifs_and_Pics/PrgBar_in_jpnb.gif" alt="error">
 </p>
 
-* Upon running the program, there will be two more folders created to store the cleaned csv and final SQL Lite DB. Final folder structure as below:  
-<p align="center">
-  <img src="./Pictures/SQLite_DB_Pics/Final_Folders.png" alt="error" max-height="50%" max-width="50%">
-</p>  
-
-
 ## 7. Final Loaded SQLite DB Images
 <ul>
   <li>
-    <a class = "btn" href="./Pictures/ETL_DB.png"><span style = "color:blue;"><b>Click here</b></span>
+    <a class = "btn" href="./Pictures/SQLite_DB_Pics/ETL_DB.png"><span style = "color:blue;"><b>Click here</b></span>
     </a> to see all loaded table image.<br>
   </li>
 
   <li>
-    <a class = "btn" href="./Pictures/ETL_DB_imdb_movies.png"><span style = "color:blue;"><b>Click here</b></span>
+    <a class = "btn" href="./Pictures/SQLite_DB_Pics/ETL_DB_imdb_movies.png"><span style = "color:blue;"><b>Click here</b></span>
     </a> to see the loaded <b>imdb_movies</b> table image.<br>
   </li>
 
   <li>
-    <a class = "btn" href="./Pictures/ETL_DB_netflix_movie.png"><span style = "color:blue;"><b>Click here</b></span>
+    <a class = "btn" href="./Pictures/SQLite_DB_Pics/ETL_DB_netflix_movie.png"><span style = "color:blue;"><b>Click here</b></span>
     </a> to see the loaded <b>netflix_movie</b> table image.<br>
   </li>
 
   <li>
-    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png"><span style = "color:blue;"><b>Click here</b></span>
+    <a class = "btn" href="./Pictures/SQLite_DB_Pics/ETL_DB_netflix_tv_show.png"><span style = "color:blue;"><b>Click here</b></span>
     </a> to see the loaded <b>netflix_tv_show</b> image.<br>
   </li>
 </ul>

@@ -1,6 +1,6 @@
 # Let's Cook! &nbsp; --> Extract --> Transform --> Load
 ## 1. Background
-Often in time, data is not always "clean" to be analyzed, plotted or even for machine learning. In this project, two `.csv` files were downloaded from Kaggle that have several issues such as missing values, datetime format, datatype mismatch, etc. A team of two: ***Henry Le*** and ***Abimbola Agunloye*** utilized Python to perform Extract, Transform and Load operations to resolve mentioned issues. Cleaned version of data is then loaded into SQLite DataBase.
+Data is not always "clean" to be analyzed, plotted or even for machine learning. In this project, two `.csv` files were downloaded from Kaggle that have several issues such as missing values, datetime format, datatype mismatch, etc. A team of two: ***Henry Le*** and ***Abimbola Agunloye*** utilized Python to perform Extract, Transform and Load operations to resolve mentioned issues. Cleaned version of data is then loaded into SQLite DataBase.
 
 
 <p align="center">

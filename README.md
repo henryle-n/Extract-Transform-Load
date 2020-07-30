@@ -1,4 +1,4 @@
-# Let's Cook! Extract -> Transform -> Load
+# Let's Cook! &nbsp; --> Extract --> Transform --> Load
 ## Overview   
 In this project, team of two: ***Henry Le*** and ***Abimbola Agunloye*** processed two downloaded CSV files from Kaggle.com.   
 <br>
@@ -11,7 +11,7 @@ The main objectives are to clean up, process, load final version into SQLite Dat
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/maintheme_pic.gif" alt="error" max-height="50%" max-width="50%">
 </p>  
 
-*Created by: Henry Le | Apr. 27, 2020*
+&nbsp; &nbsp; &nbsp; <i><span style="font-family:metronova; font-size:0.2em;">Created by: Henry Le | Apr. 27, 2020</span></i>
 
 <hr>
 
@@ -82,7 +82,7 @@ The following tables are loaded into SQL Lite:
 
 
 ## Other Considerations with SQL Alchemy  
-* Program was built with an option to ask user to select how much data need to be loaded to prevent program from crashing on slower computing devices  
+* Program was built with an option to let user to select amount of data to load. This helps prevent program from crashing on slower computing devices  
 
 <p align="center">  
   <img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/user_input_jpnb.gif" alt="error" max-height="50%" max-width="50%">
@@ -113,19 +113,24 @@ The following tables are loaded into SQL Lite:
 </p>  
 
 
-## Final Images of Loaded SQLite DB  
-* **All tables**  
+## Final Loaded SQLite DB Images
+<ul>
+  <li>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png"><span style = "color:blue;"><b>Click here</b></span>
+    </a> to see all loaded table image<br>
+  </li>
 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB.png" alt="error" max-height="30%" max-width="30%">  
+  <li>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png"><span style = "color:blue;"><b>Click here</b></span>
+    </a> to see the loaded <b>imdb_movies</b> table image<br>
+  </li>
 
-* **imdb_movies** table 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_imdb_movies.png" alt="error" max-height="30%" max-width="30%">  
+  <li>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png"><span style = "color:blue;"><b>Click here</b></span>
+    </a> to see the loaded <b>netflix_movie</b> table image<br>
+  </li>
 
-
-* **netflix_movie**  table
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_movie.png" alt="error" max-height="30%" max-width="30%">   
-
-
-* **netflix_tv_show** table 
-<img src="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png" alt="error" max-height="30%" max-width="30%">  
-
+  <li>
+    <a class = "btn" href="https://github.com/henryle-n/Extract-Transform-Load-DB/blob/hle/Pictures/ETL_DB_netflix_tv_show.png"><span style = "color:blue;"><b>Click here</b></span>
+    </a> to see the loaded <b>netflix_tv_show</b> image<br>
+  </li>

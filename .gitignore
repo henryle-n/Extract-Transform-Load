@@ -6,8 +6,8 @@ imdb_movies.db
 ETL_movies.db
 netflix_tv_show.csv
 netflix_movie.csv
-
-
+ETL-sqlite.py
+.ipynb_checkpoints
 
 
 # Byte-compiled / optimized / DLL files

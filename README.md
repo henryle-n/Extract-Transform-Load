@@ -55,14 +55,9 @@ After two datasets were downloaded, performed data transformation as the followi
 * Re-name and re-arrange columns. 
 * Export cleaned data to CSV and get ready for loading into SQL Lite.
  
-### 4.3 Loading Data in to SQL Lite (Load)
+### 4.3 Loading Data Database (Load)
 #### DataBase Selection  
-Since downloaded data is relational database, SQL Lite is chosen for the project instead of un-relational DB like MongoDB.  
-
-The following tables are loaded into SQL Lite:  
-* **imdb_movies.csv**  
-* **netflix_movie.csv**  
-* **netflix_tv_show.csv**  
+There are relational and non-relational database, such as SQL and no-SQL (MongoDB). Since downloaded data is a relational database, SQL DB is chosen. Because the data is not so large, the team chose SQLite.   
 
 #### Method of Loading
 * **imdb_movies.csv**: SQLAlchemy with Class and Table creation to load Pandas DataFrame into SQL Lite via engine/connection.  
@@ -70,7 +65,7 @@ The following tables are loaded into SQL Lite:
 * **netflix_tv_show.csv**: manually loaded by SQL Lite -> File -> Import.   
 
 ## 5. Summary
-* Both downloaded datasets are not cleaned, lots of issues such as numbers mixed with strings, missing data, special characters, inconsistent data in the same columns, date time are all in one columns, etc. These create many issues with DataType mismatch upon pushing to SQLite from Python & SQLAlchemy.
+* Both downloaded CSVs are not cleaned, lots of issues such as numbers mixed with strings, missing data, 'special' characters, inconsistent data in the same columns, date time are all in one columns, etc. These created many issues with DataType mismatch upon pushing to SQLite using Python & SQLAlchemy.
 
 * SQL Lite Limitations: can processed interger upto 8-bit by default, thus was causing errors upon using SQLAlchemy to load data. Upon intensive research online and from documentations, found the solutions to assign integer-64-bit to SQL Lite.
 
